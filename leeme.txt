@@ -1,0 +1,7 @@
+1º-Crear base de datos en mysql con los scripts BBDD.sql. En mi caso he usado un servidor llamado AppServ y las credenciales de la base de datos son user:root y pwd:root.
+
+2ºPara ejecutar el proyecto frontend.
+1- npm install (para descargar las dependencias)
+2- ng serve(para arrancarlo)
+
+3º-Para abrir el proyecto backend lo importas como un proyecto maven y lanzas el tomcat embebido. 

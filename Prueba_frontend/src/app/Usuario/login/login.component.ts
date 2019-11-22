@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
 export class LoginComponent implements OnInit {
 
   constructor(private router:Router,private service: ServiceService,private toastr: ToastrService) {}
-
+  loading = false;
   usuario: Usuario = new Usuario();
   ngOnInit()   {
   }
@@ -33,5 +33,8 @@ export class LoginComponent implements OnInit {
     this.toastr.error('El usuario no es correcto','Error');
     });
   }
-
+agregar() {
+  this.loading = true
+  this.router.navigate(["add"]);
+}
 }

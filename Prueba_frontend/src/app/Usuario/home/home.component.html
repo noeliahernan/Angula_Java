@@ -6,8 +6,8 @@
 </div>
 <br>
 <div class="container text-center">
-    <button (click)="listar()" class="btn btn-info">Listar</button>
-    <button (click)="agregar()" class="btn btn-info" style="margin-left: 10px;">Añadir</button>
+    <button *ngIf="isLogged()" (click)="listar()" class="btn btn-info">Listar</button>
+    <button *ngIf="isLogged()" (click)="agregar()" class="btn btn-info" style="margin-left: 10px;">Añadir</button>
     <button (click)="salir()" class="btn btn-danger" style="margin-left: 10px;">Salir</button>
 </div>
 <ngx-loading [show]="loading"></ngx-loading>

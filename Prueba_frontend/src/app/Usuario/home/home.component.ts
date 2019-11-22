@@ -29,4 +29,7 @@ export class HomeComponent implements OnInit {
     localStorage.clear();
     this.router.navigate(["login"]);
   }
+  isLogged() {
+    return localStorage.getItem('usuario') != null;
+  }
 }

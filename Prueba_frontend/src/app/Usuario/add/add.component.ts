@@ -23,7 +23,7 @@ export class AddComponent implements OnInit {
     .subscribe(data=> {
       this.loading = false;
       this.toastr.success('El usuario se agrego correctamente');
-      this.router.navigate(['listar']);
+      localStorage.getItem('usuario')? this.router.navigate(['listar']):  this.router.navigate(['login']);
     }, error => {
       this.loading = false;
       this.toastr.error('Se ha producido un error realizando la operación','Error');

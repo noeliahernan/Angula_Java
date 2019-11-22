@@ -14,7 +14,9 @@
                     <input [(ngModel)]="usuario.password" name="apellidos" type="password" class="form-control">
                 </div>
                 <button (click)="login()" class="btn btn-danger">Login</button>
+                <button (click)="agregar()" class="btn btn-info" style="margin-left: 10px;">Registrarse</button>
             </form>
         </div>
     </div>
+    <ngx-loading [show]="loading"></ngx-loading>
 </div>
